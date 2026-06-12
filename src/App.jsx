@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 
-/* ---------------- LOCAL STORAGE KEYS ---------------- */
+
 
 const STUDENTS_KEY = "students";
 const SESSION_KEY = "student_session";
 
-/* ---------------- LOCAL STORAGE FUNCTIONS ---------------- */
 
 function getStudents() {
   return JSON.parse(localStorage.getItem(STUDENTS_KEY)) || [];
@@ -35,7 +34,7 @@ function clearSession() {
   localStorage.removeItem(SESSION_KEY);
 }
 
-/* ================= SIGNUP PAGE ================= */
+
 
 function Signup({ setPage }) {
 
@@ -180,7 +179,6 @@ function Signup({ setPage }) {
   );
 }
 
-/* ================= LOGIN PAGE ================= */
 
 function Login({
   setPage,
@@ -279,7 +277,7 @@ function Login({
   );
 }
 
-/* ================= DASHBOARD ================= */
+
 
 function Dashboard({
   student,
@@ -322,7 +320,7 @@ function Dashboard({
   );
 }
 
-/* ================= MAIN APP ================= */
+
 
 export default function App() {
 
